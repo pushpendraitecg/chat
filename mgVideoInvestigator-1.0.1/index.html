@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Magnoliyan Video Chat</title>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>Magnoliyan Video Chat <small>Investigator</small></h1>
+                <p>This is simple tool used to investigate if you will be able to deploy full featured <a href="http://www.magnoliyan.com/rtc-video/" target="_blank">Video Chat server</a> on a hosting platform.</p>
+                <p>Make sure to update <code>source/server/bin/config.php</code> if you want to change server port.</p>
+                <p>Then, run your server from <a href="http://www.magnoliyan.com/rtc-video/#Server-Management" target="_blank">command line</a> or try  <a href="source/server/web-commander/index.php" target="_blank">web commander</a></p>
+                <p>Then open this file <code>index.html</code> and also update domain and port in <em>mgVideoChat</em> javascript initialization and reload the page from a browser to see result.</p>
+            </div>
+            <div id="mgVideoChat"></div>
+        </div>
+
+        <script src="http:////ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+        <!-- Video Chat -->
+        <script src="source/client/mgVideoChat/mgVideoChat-1.0.1-min.js"></script>
+        <script>
+            $('#mgVideoChat').mgVideoChat({
+                wsURL: 'ws://your_domain:8080'
+            });
+        </script>
+    </body>
+</html>

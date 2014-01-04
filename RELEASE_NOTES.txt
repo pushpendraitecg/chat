@@ -1,0 +1,14 @@
+[Magnoliyan Video Chat] Realease Notes
+
+
+1.0.1 - Dec 2., 2013
+====================
+* initial version
+
+1.0.2 - Dec 20., 2013
+====================
+* chat scroll fix, docs update
+
+1.0.3 - Dec 24., 2013
+====================
+* operators at room level, simple auth with members support, web commander
