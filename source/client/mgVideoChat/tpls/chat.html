@@ -1,0 +1,11 @@
+<li class="media">
+    <% var className = (me)? 'pull-right':'pull-left';%>
+    <span class="<%=className%>">
+    <% if (userData.image){ %>
+        <img class="media-object" src="<%=userData.image%>" style="width: 24px; height: 24px;" alt="<%=userData.name%>"/>
+    <% }else{ %>
+        <div class="media-object glyphicon glyphicon-user" style="font-size: 24px; width: 24px; height: 24px;" title="<%=userData.name%>"></div>
+    <% } %>
+    </span>
+    <span class="<%=className%>"><%=message%></span>
+</li>

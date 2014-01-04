@@ -1,0 +1,102 @@
+#messagePanel{
+    display: none;
+}
+
+#callPanel{
+    display: none;
+}
+
+#videoPanel{
+    position: relative;
+    width: 100%;
+}
+
+#remoteVideo{
+    width: 100%;
+    background-image: url("images/loading.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#localVideo{
+    width: 20%;
+    position: absolute;
+    z-index: 1;
+    right: 5%;
+    bottom: 5%;
+    border: 1px solid white;
+}
+
+#videoToolbar{
+    z-index: 1;
+    position: absolute;
+    display: none;
+    bottom:5%;
+    left: 5%;
+}
+
+#videoPanel:hover #videoToolbar{
+    display: block;
+}
+
+#videoPanel #videoExitFullScreen{
+    display: none;
+}
+
+#videoPanel:full-screen #videoExitFullScreen{
+    display: block;
+}
+#videoPanel:-webkit-full-screen #videoExitFullScreen{
+    display: block;
+}
+#videoPanel:-moz-full-screen #videoExitFullScreen{
+    display: block;
+}
+
+#videoPanel:full-screen #videoFullScreen{
+    display: none;
+}
+#videoPanel:-webkit-full-screen #videoFullScreen{
+    display: none;
+}
+#videoPanel:-moz-full-screen #videoFullScreen{
+    display: none;
+}
+
+#chatPanel{
+    display: none;
+}
+
+#loginPanel{
+    display: none;
+}
+
+#connectionsPanel li.connectionItem.active,#connectionsPanel li.connectionItem.active:hover{
+    z-index: 2;
+    color: #fff;
+    background-color: #428bca;
+    border-color: #428bca;    
+}
+
+#connectionsPanel li.connectionItem:hover{
+    background-color: #ddd;
+    border-color: #428bca;  
+}
+
+.connectionItem .media-object{
+    width: 32px;
+    height: 32px;
+}
+
+.chat{
+    display: none;
+}
+
+.chat .messages{
+    max-height: 400px;
+    overflow: auto;
+}
+
+span.badge.unread{
+    background-color: #f0ad4e;
+}

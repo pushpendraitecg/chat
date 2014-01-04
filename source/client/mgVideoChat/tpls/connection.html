@@ -1,0 +1,51 @@
+
+        <li id="connection_<%=id%>" data-connection_id="<%=id%>" class="list-group-item media connectionItem">
+            <span class="pull-left">
+            <% if (userData.image){ %>
+                <img class="media-object" src="<%=userData.image%>" alt="<%=userData.name%>">
+            <% }else{ %>
+                <div class="media-object glyphicon glyphicon-user" style="font-size: 32px;"></div>
+            <% } %>
+            </span>
+            <div class="media-body">
+                <h5 class="media-heading"><%=userData.name%></h5>
+                <span id="callCell_<%=id%>">
+                    <span class="callStatus">
+                        <button data-id="<%=id%>" class="cmdBtn chatMsg btn btn-info" title="Text chat">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                        </button>
+                        <% if(!videoId || videoId == id){ %>
+                            <% if(status == 'idle'){ %>
+                            <button data-id="<%=id%>" class="cmdBtn idle call btn btn-success" title="Call">
+                                <span class="glyphicon glyphicon-facetime-video"></span>
+                            </button>
+                            <button data-id="<%=id%>" class="cmdBtn idle callAudio btn btn-success" title="Call Audio">
+                                <span class="glyphicon glyphicon-earphone"></span>
+                            </button>
+                            <% }
+                            if(status == 'call_invited'){ %>
+                            <button data-id="<%=id%>" class="cmdBtn called answer btn btn-success" title="Answer">
+                                <span class="glyphicon glyphicon-earphone"></span>
+                            </button>
+                            <span class="badge status called label label-important">Ringing...</span>
+                            <% }
+                            if(status == 'call_inviting'){ %>
+                            <button data-id="<%=id%>" class="cmdBtn calling drop btn btn-danger" title="Cancel">
+                                <span class="glyphicon glyphicon-phone-alt"></span>
+                            </button>
+                            <span class="badge status calling label">Calling...</span>
+                            <% }
+                            if($.inArray(status,['call','sdp_answered','sdp_answering','sdp_offered','sdp_offering','call_accepted','call_accepting']) >= 0){%>
+                            <button data-id="<%=id%>" class="cmdBtn talk drop btn btn-danger" title="Hang Up">
+                                <span class="glyphicon glyphicon-phone-alt"></span>
+                            </button>
+                            <span class="badge status talk label">In call</span>
+                            <% }
+                            if(unread){%>
+                            <span class="badge unread pull-right"><%=unread%></span>
+                            <% } %>
+                        <% } %>
+                    </span>
+                </span>
+            </div>                       
+        </li>
