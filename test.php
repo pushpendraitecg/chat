@@ -21,7 +21,7 @@
         <script src="source/client/mgVideoChat/mgVideoChat-1.0.3-min.js"></script>
         <script>
             $(document).ready(function(){ 
-                //alert(3);
+                alert(3);
             $('#mgVideoChat').mgVideoChat({
                 wsURL: 'ws://ec2-50-17-83-100.compute-1.amazonaws.com:8080?room=1'
             });
