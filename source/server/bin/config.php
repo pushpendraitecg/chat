@@ -1,7 +1,7 @@
 <?php
 $config = array(
-    'port'              =>8080,
-    'debug'             => true,
+    'port'              =>8082,
+    'debug'             => false,
     'allowedOrigins'    => null,
     'IpBlackList'       => null,
     'authAdapter'       => 'MgRTC\Session\AuthSimple',
