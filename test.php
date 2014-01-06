@@ -23,7 +23,7 @@
             $(document).ready(function(){ 
                 //alert(3);
             $('#mgVideoChat').mgVideoChat({
-                wsURL: 'ws://ec2-54-205-46-237.compute-1.amazonaws.com/.com:8080?room=1'
+                wsURL: 'ws://ec2-54-205-46-237.compute-1.amazonaws.com:8080?room=1'
             });
             
             ////////////////////////////////////////////////////
