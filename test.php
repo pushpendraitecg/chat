@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Magnoliyan Video Chat</title>
+        <title>Magnoliyan Video Chat:1</title>
 
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="source/client/mgVideoChat/mgVideoChat-1.0.3.css">
