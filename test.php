@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Magnoliyan Video Chat:3</title>
+        <title>Magnoliyan Video Chat:4</title>
 
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="source/client/mgVideoChat/mgVideoChat-1.0.3.css">
@@ -21,9 +21,9 @@
         <script src="source/client/mgVideoChat/mgVideoChat-1.0.3-min.js"></script>
         <script>
             $(document).ready(function(){
-               // alert(3);
+               
             $('#mgVideoChat').mgVideoChat({
-                wsURL: 'ws://ec2-50-17-83-100.compute-1.amazonaws.com:8082?room=1'
+                wsURL: 'ws://ec2-50-17-83-100.compute-1.amazonaws.com:8080?room=1'
             });
             
             ////////////////////////////////////////////////////
